@@ -18,11 +18,10 @@ import { UsersModule } from './users/users.module';
       username: 'postgres',
       password: 'hammad@123',
       database: 'task_manager',
-      synchronize: true, // use false in production!
+      synchronize: true, 
       autoLoadEntities: true,
     }),
 
-    // MongooseModule.forRoot('mongodb://localhost:27017/2013'),
     MongooseModule.forRoot(
       'mongodb+srv://hammad:hammad%40123@paradise-store.y3w9cfo.mongodb.net/2013',
     ),

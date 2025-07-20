@@ -1,56 +1,57 @@
 # 📝 Task Management App
 
-A modern full-stack **task collaboration system** where users can log in, create, assign, and manage tasks in real time. Built with **Next.js**, **NestJS**, **MongoDB**, **PostgreSQL**, **WebSockets**, and **Tailwind CSS**.
+A full-stack task management system for modern teams. Users can register, log in, create and assign tasks, and collaborate in real-time with live updates.
+
+Built with:
+
+Next.js (Frontend)
+
+NestJS (Backend)
+
+PostgreSQL and MongoDB
+
+WebSockets
+
+Tailwind CSS
 
 ---
 
-## 📸 Screenshots
-
-![Login Page](![image](https://github.com/user-attachments/assets/da349df6-d8e7-4831-8227-0de223dfe0aa)
-)  
-*Login Screen*
-
-![Register Page](![image](https://github.com/user-attachments/assets/092319f5-f5d2-4d33-a26e-25052bfa241c)
-)
-
-![Dashboard](![image](https://github.com/user-attachments/assets/df875d8a-c959-4a3a-b7e4-43e35c79e39c)
-)  
-*Dashboard with Tasks*
-
-![Task Modal](![image](https://github.com/user-attachments/assets/5f4dd837-da1c-4667-8446-b6286c12d0da)
-)  
-*Modal to Create New Task*
-
 ---
 
-## 🚀 Tech Stack
-
-| Layer       | Technology                                 |
-|-------------|---------------------------------------------|
-| Frontend    | Next.js, React, Tailwind CSS, TypeScript    |
-| Backend     | NestJS, TypeORM, WebSockets                 |
-| Database    | PostgreSQL (Tasks & Users), MongoDB (Logs)  |
-| Auth        | JWT (JSON Web Tokens)                       |
-| State Mgmt  | React Query + Context API                   |
-| Testing     | Jest + React Testing Library                |
-
----
+⚙️ Tech Stack Overview
+Layer Technology
+Frontend Next.js, React, Tailwind CSS, TypeScript
+Backend NestJS, TypeORM, WebSockets
+Databases PostgreSQL (core data), MongoDB (logs)
+Auth JWT-based Authentication
+State React Query + Context API
+Testing Jest, React Testing Library
 
 ## 🧩 Project Structure
 
-task-management-app/
-├── task-manager-frontend/ # Next.js React Application
-├── backend/ # NestJS API
+exact_task/
+├── backend/ # NestJS API (auth, tasks, sockets)
+├── frontend/ # Next.js frontend UI
 ├── .gitignore
-└── README.md # You're reading it
+└── README.md
 
+📂 .gitignore (included)
+node_modules/
+dist/
+.env
+.env.local
+.next/
+out/
+coverage/
+
+````
 ## 🛠️ Setup Instructions
 
 ## ✅ 1. Clone the Repository
 
 ```bash
-git clone https://github.com/MirzaShahzadSaleem/Task-Management-App.git
-cd Task-Management-App
+git clone https://github.com/hamadbaig/exact_task.git
+cd exact_task
 
 ## ⚙️ Backend Setup (/backend)
 
@@ -65,29 +66,19 @@ yarn
 yarn dev
 
 ✨ Features
+🔐 Secure JWT Auth – Login/Register flows
 
-🔐 JWT Auth with Login / Register
+👥 Role-based Access Control – Admin/User dashboard separation
 
-🧑‍🤝‍🧑 Role-based route protection (Admin/User)
+📋 Task Management – Create, assign, edit, delete tasks
 
-📋 Task creation, assignment, update, and status management
+🔄 Live Sync – Real-time updates using WebSockets
 
-📡 Real-time updates with WebSocket (NestJS Gateway)
+🧾 Task Logs – Stored in MongoDB for activity tracking
 
-💬 Task logs stored in MongoDB
+🧪 Testing Support – Unit tests with Jest
 
-🎨 Responsive UI using Tailwind CSS
+📱 Responsive Design – Built with Tailwind CSS
 
-🧪 Unit testing support
 
-📂 .gitignore (included)
-gitignore
-Copy
-Edit
-node_modules
-dist
-.env
-.env.local
-.next
-out
-coverage
+````
